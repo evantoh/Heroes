@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Hero} from '../hero';
 
 @Component({  //decorator function that specifies the Angular metadata for the component.
   selector: 'app-heroes',//the component's CSS element selector
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']//the location of the component's private CSS styles
 })
 export class HeroesComponent implements OnInit {
-  hero='Windstorm';
+  hero : Hero={
+    id:1,
+    name:'Windstorm'
+  }
+
 
   constructor() { }
 
