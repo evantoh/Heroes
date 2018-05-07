@@ -4,9 +4,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 
 const routes: Routes=[
-  {
-    path:'heroes', component: HeroesComponent
-  }
+  { path:'heroes', component: HeroesComponent},
+  { path:'dashboard', component: DashboardComponent}
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
